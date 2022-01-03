@@ -1,0 +1,57 @@
+
+#banner{
+    margin: 0;
+    padding: 200px;
+    background-color: #9dc5c3;
+    background-image:url(./images/victor-freitas-WvDYdXDzkhs-unsplash.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px #5e5c5c;
+}
+
+nav{
+    padding:30px;
+    box-shadow: 2px 2px 2px #5e5c5c;
+}
+
+#img-div{
+    width: 100%;
+    height: auto;
+}
+
+#banner-img {
+    filter: brightness(50%);
+}
+
+#banner-text{
+    font-family: 'Mulish', sans-serif;
+}
+
+.card{
+    margin-top: 8px;
+    box-shadow: 4px 4px 4px  	rgb(41, 43, 44);
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.site-footer{
+    padding:40px;
+    background-color: #5e5c5c;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px; }
+
+/* FORM */
+
+#goals{
+   resize: none;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href='style.css' >
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet"> 
+    <title>MLT Health Club</title>
+  </head>
+  <body>
+    <header id='banner' class=" jumbotron jumbotron-fluid text-white">
+            <div class="row">
+                <div class="col">
+                    <h1 id='banner-text' class="font-weight-bold">Mountlake Terrace Health Club</h1>
+                </div>
+            </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href='blog.html'>Blog</a>
+                </li>
+                <li class="d-flex nav-item">
+                    <a role="button" id='signInButton' class="nav-link">Sign In</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div id="signInModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Sign In</h3>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                            <form id='signInForm'>
+                                <div class="form-group row">
+                                        <label for='username'>Username</label>
+                                        <input type="text" id='username' class="form-control">
+                                </div>
+                                <div class="form-group row">
+                                    <label for='password'>Password</label>
+                                    <input type="password" id='password' class="form-control">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+      <h1 class="text-center text-wrap">At MLT health club we are commited to helping you achieve your fitness and welness goals.</h1>
+    </div>
+    <br>
+    <div class="container d-flex flex-wrap justify-content-around align-content-between">
+          <div class="card" style="width: 16rem;">
+            <img class="card-img-top" src="./images/weight-svgrepo-com.svg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">The Club</h5>
+                <p class="card-text">Our facility offers state of the art cardio eqipment, free weights, pool, and sauna. </p>
+            </div>
+          </div>
+          <div class="card" style="width: 16rem;">
+              <img class="card-img-top" src="./images/yoga-svgrepo-com.svg" alt="Card image cap">
+               <div class="card-body">
+                  <h5 class="card-title">Group Classes</h5>
+                  <p class="card-text">Check out our class schedule to mix up your routine</p>
+                </div>
+          </div>
+          <div class="card" style="width: 16rem;">
+            <img class="card-img-top" src="./images/fitness-svgrepo-com.svg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Membership</h5>
+                <p class="card-text">Members enjoy exclusive benefits. We offer plans to fit every schedule and budget</p>
+            </div>
+          </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm-6">
+                <h3 class="text-center"> Recent Blog Articles</h3>
+            </div>
+            <div class ='col'>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">
+                            <h4>10 Tips to Accomplish Your New Year's Resolutions</h4>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Exercise Routines for Beginners</h4>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Healthy Holiday Recipes</h4>
+                        </li>
+                        <li class="list-group-item"><a href="blog.html">Read More...</a></li>
+                    </ul>
+            </div>
+
+        </div>
+        <br>
+        <div class="row row-content">
+            <div class="col-sm-6">
+                <h3 class="text-center">Weekly Free Class</h3>
+            </div>
+            <div class="col">
+                <div class="card" >
+                        <h3 class="card-header bg-dark text-white"> Power Pool Aerobics </h3>
+                        <div class="card-body">
+                            <p class="card-text">This new and exciting class will change the way you think about pool aerobics!</p>
+                            <p class="card-text"> Offered Monday and Wednesday 6AM - 7AM</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        <br>
+        <h3 class="text-center">Schedule</h3>
+        <p class="text-center"> Gym and Sauna Facilities are open 4 AM - 11 PM Everyday. See schedule below for group class times.</p>
+        <div class="row row-content">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Mon.</th>
+                        <th scope="col">Tues.</th>
+                        <th scope="col">Wed.</th>
+                        <th scope="col">Thurs.</th>
+                        <th scope="col">Fri.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">6 AM - 7 AM</th>
+                        <td>Pool Aerobics</td>
+                        <td>Lap Swim</td>
+                        <td>Pool Aerobics</td>
+                        <td>Lap Swim</td>
+                        <td>Yoga</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9 AM - 10 AM</th>
+                        <td>Dance Cardio</td>
+                        <td>Yoga</td>
+                        <td>Crossfit</td>
+                        <td>Yoga</td>
+                        <td>Beginner Weightlifting</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6 PM - 7 PM</th>
+                        <td>Mindfulness Yoga</td>
+                        <td>Jazzercise</td>
+                        <td>Lap Swim</td>
+                        <td>Crossfit</td>
+                        <td>Advanced Weightlifting</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <br>
+        <h3 class="text-center">Ready to try it out?</h3>
+        <p class="text-center">Fill out the form below and one of our personal trainers will reach out to you!</p>
+        <form>
+            <div class="form-group">
+                <label for='name'>Name:</label>
+                <input type ='text' class="form-control" id='name'>
+            </div>
+            <div class="form-group">
+                <label for='email'>Email:</label>
+                <input type ='text' class="form-control" id='email'>
+            </div>
+            <div class="form-group">
+                <label for='phone'>Phone:</label>
+                <input type ='text' class="form-control" id='phone'>
+            </div>
+            <div class="form-group">
+                <label for='goals'>Briefly describe your fitness goals</label>
+                <textarea class="form-control" id='goals'></textarea>
+            </div>
+            <button class="btn btn-success mx-auto">Submit</button>
+        </form>
+    </div>
+    <br>
+    
+
+    <footer class='site-footer bg-dark sticky-bottom'>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-white">Contact</h5>
+                    <ul class="list-unstyled text-white">
+                        <li>Phone: (555) 123 - 4567</li>
+                        <li>Email: contact@mlthealth.com</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="text-white">Connect with us on Social media!</h5>
+                  
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  
+    <script>
+        $(() => {
+            $("#signInButton").click(() => {
+                $("#signInModal").modal("show")
+            })
+        })
+    </script>
+  </body>
+</html>
